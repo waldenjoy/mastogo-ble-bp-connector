@@ -1,0 +1,109 @@
+DEVICE --
+ff:24:03:26:04:0e  MASTOGO-040E  4.2  1  LinkedSemi Microelectronics (Xiamen) Co., Ltd                                                                  
+
+--------------------
+Wierdness
+
+- in NRF the text starts with " 2b ", not " 41542b "
+ex - 2b-43-53-54-52-3a-31-2c-39-0d-0a
+
+- sometimes " 3 " is used as a zero place holder or spacer 
+
+Ex - levels 
+LVL9   - 41542b 435354523a312 c39 0d0a > c39 is 9
+LVL10 - 41542b 435354523a312 c3130 0d0a > c3130 is 10
+
+Ex - time
+30:06 - 41542b 4344434c4b3d30303 3303036 0d0a
+
+
+??? for levels above 9 ????
+31-2c39 > 31-30
+
+
+
+
+Pause
+Value: 41542b 51504f5750 0d0a
+
+Play
+Value: 41542b 51504f5753 0d0a
+
+Keep Alive -- SENT EVERY 30 sec
+Value: 41542b4342433f0d0a -- ??
+
+
+---------------------
+LEVELS
+- 10 jumps to c3130 
+
+
+LVL1 - LVL2
+-- USE Cxx FOR LEVEL SO THAT >15 (c3f) IS MAPPED
+Value: 41542b 435354523d302 c32 0d0a  --  435354523d302 c32   -- 2 is level
+
+LVL2 - LVL1
+Value: 41542b 435354523d302 c31 0d0a  --  435354523d302 c31   -- 1 is level
+
+LVL2 - LVL3
+Value: 41542b 435354523d302 c33 0d0a  --  435354523d302 c33   -- 3 is level
+
+LVL10
+Value: 41542b 435354523a312 c3130 0d0a > c3130 is 10
+
+
+-----------------------
+BUTTON NEEDS MORE TESTING
+
+button - (LVL4 to LVL3)
+Value: 41542b 435354523d302 c33 0d0a
+Value: 41542b 4342433f 0d0a (KEEP ALIVE)  ??
+Value: 41542b 51504f5753 0d0a  (play)
+
+
+------------------------
+MODES
+
+TESTED -- (Start at ACU) > CUP > SCRAP > ACU
+- PAUSES TO ZERO AFTER CHANGE TO PREVENT SHOCK
+- FAVS PROBABLY SET MODE, LEVEL, AND THEN PLAY?
+
+cup
+Value: 41542b 434d4f44453d302 c31 0d0a
+Value: 41542b 51504f57500d0a (pause)
+
+scrap
+Value: 41542b 434d4f44453d302 c32 0d0a
+Value: 41542b 51504f57500d0a (pause)
+
+acu
+Value: 41542b 434d4f44453d302 c30 0d0a
+Value: 41542b 51504f5750 0d0a (pause)
+
+
+------------------------
+TIME
+(DELETE 4344434c4b3d30303; THEN DELETE 3 IN 2,4,6 POSITION)
+
+30:06
+Value: 41542b 4344434c4b3d30303 3303036 0d0a
+
+30:12
+Value: 41542b 4344434c4b3d30303 3303132 0d0a
+
+37:04
+Value: 41542b 4344434c4b3d30303 3373034 0d0a
+
+12:13
+Value: 41542b 4344434c4b3d30303 1323133 0d0a
+
+???? lengthen time
+Value: 41542b 4344434c4b3d303 13 0303030 0d0a  --  ??
+
+
+
+
+Value: 41542b 4 444 4c4b d003006 0d0a
+
+
+

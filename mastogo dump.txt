@@ -1,0 +1,259 @@
+Frame 2429: 14 bytes on wire (112 bits), 14 bytes captured (112 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x001e (Unknown)
+    Value: 0100
+
+Frame 2991: 23 bytes on wire (184 bits), 23 bytes captured (184 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b434d4f44453f0d0a
+
+Frame 2997: 23 bytes on wire (184 bits), 23 bytes captured (184 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b434d4f44453f0d0a
+
+Frame 3002: 23 bytes on wire (184 bits), 23 bytes captured (184 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b4344434c4b3f0d0a
+
+Frame 3006: 23 bytes on wire (184 bits), 23 bytes captured (184 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b4344434c4b3f0d0a
+
+Frame 3013: 21 bytes on wire (168 bits), 21 bytes captured (168 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b4342433f0d0a
+
+Frame 3022: 21 bytes on wire (168 bits), 21 bytes captured (168 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b4342433f0d0a
+
+Frame 3043: 22 bytes on wire (176 bits), 22 bytes captured (176 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b435354523f0d0a
+
+Frame 3055: 23 bytes on wire (184 bits), 23 bytes captured (184 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b4344434c4b3f0d0a
+
+Frame 3067: 23 bytes on wire (184 bits), 23 bytes captured (184 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b51504f57503f0d0a
+
+Frame 3074: 21 bytes on wire (168 bits), 21 bytes captured (168 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b4342433f0d0a
+
+Frame 3094: 22 bytes on wire (176 bits), 22 bytes captured (176 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b51504f57530d0a
+
+Frame 3619: 22 bytes on wire (176 bits), 22 bytes captured (176 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b51504f57530d0a
+
+Frame 3645: 25 bytes on wire (200 bits), 25 bytes captured (200 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b435354523d302c320d0a
+
+Frame 3746: 25 bytes on wire (200 bits), 25 bytes captured (200 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b435354523d302c340d0a
+
+Frame 4279: 25 bytes on wire (200 bits), 25 bytes captured (200 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b435354523d302c340d0a
+
+Frame 4386: 25 bytes on wire (200 bits), 25 bytes captured (200 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b435354523d302c330d0a
+
+Frame 4486: 25 bytes on wire (200 bits), 25 bytes captured (200 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b435354523d302c310d0a
+
+Frame 5227: 25 bytes on wire (200 bits), 25 bytes captured (200 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b435354523d302c320d0a
+
+Frame 5402: 25 bytes on wire (200 bits), 25 bytes captured (200 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b435354523d302c320d0a
+
+Frame 5475: 25 bytes on wire (200 bits), 25 bytes captured (200 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b435354523d302c330d0a
+
+Frame 5788: 22 bytes on wire (176 bits), 22 bytes captured (176 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b51504f57500d0a
+
+Frame 6087: 22 bytes on wire (176 bits), 22 bytes captured (176 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b51504f57530d0a
+
+Frame 6490: 25 bytes on wire (200 bits), 25 bytes captured (200 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b435354523d302c320d0a
+
+Frame 6588: 25 bytes on wire (200 bits), 25 bytes captured (200 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b435354523d302c310d0a
+
+Frame 6657: 25 bytes on wire (200 bits), 25 bytes captured (200 bits) on interface android-bluetooth-btsnoop-net-192.168.20.117:39329, id 0
+Bluetooth
+Bluetooth HCI H4
+Bluetooth HCI ACL Packet
+Bluetooth L2CAP Protocol
+Bluetooth Attribute Protocol
+    Opcode: Write Request (0x12)
+    Handle: 0x0020 (Unknown)
+    Value: 41542b435354523d302c300d0a
