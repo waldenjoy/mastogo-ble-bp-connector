@@ -96,18 +96,16 @@ function sendText(msg) {
   }
 }
 
-function sendBinary(b64) {
-  if (!(ws && ws.readyState === WebSocket.OPEN)) {
+function sendBinary(asciiText) {
+  if (ws && ws.readyState === WebSocket.OPEN) {
+    let bytes = new Uint8Array(asciiText.length);
+    for (let i = 0; i < asciiText.length; i++) {
+      bytes[i] = asciiText.charCodeAt(i);
+    }
+    ws.send(bytes.buffer);
+  } else {
     notify("WS:SEND_FAIL:NOT_CONNECTED");
-    return;
   }
-
-  let bin = atob(b64);
-  let bytes = new Uint8Array(bin.length);
-  for (let i = 0; i < bin.length; i++) {
-    bytes[i] = bin.charCodeAt(i);
-  }
-  ws.send(bytes.buffer);
 }
 
 // Automatically reply to pings to keep the connection alive
