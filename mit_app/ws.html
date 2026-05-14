@@ -50,7 +50,11 @@ function connectWS() {
 
   ws.onmessage = (event) => {
     if (typeof event.data === "string") {
-      notify("TEXT:" + event.data);
+        // If it's a protocol ping, handle it silently
+        if (handlePing(event.data)) return; 
+        
+        // Otherwise, tell App Inventor about the text
+        notify("TEXT:" + event.data);
     } else {
       // Binary ? Base64
       let bytes = new Uint8Array(event.data);
@@ -103,6 +107,23 @@ function sendBinary(b64) {
   ws.send(bytes.buffer);
 }
 
+// Automatically reply to pings to keep the connection alive
+function handlePing(message) {
+    try {
+        const data = JSON.parse(message);
+        // Check if the message is a Ping array
+        if (Array.isArray(data) && data[0].Ping) {
+            const pingId = data[0].Ping.Id;
+            // Send back the required Ok response
+            ws.send(JSON.stringify([{ "Ok": { "Id": pingId } }]));
+            return true; // We handled it
+        }
+    } catch (e) {
+        return false; // Not a JSON ping
+    }
+    return false;
+}
+  
 /* ========= Startup ========= */
 
 notify("WS:HTML_READY");
