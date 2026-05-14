@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>WebSocket Bridge</title>
+</head>
+<body>
+<script>
+let ws = null;
+let wsUri = null;
+
+/* ========= Utility ========= */
+
+function notify(msg) {
+  if (window.AppInventor) {
+    window.AppInventor.setWebViewString(msg);
+  }
+}
+
+/* ========= Configuration ========= */
+
+/**
+ * Set the WebSocket URI but do NOT connect yet.
+ * Example: setWSUri("ws://127.0.0.1:6642")
+ */
+function setWSUri(uri) {
+  wsUri = uri;
+  notify("WS:URI_SET:" + uri);
+}
+
+/* ========= Connection Control ========= */
+
+function connectWS() {
+  if (!wsUri) {
+    notify("WS:ERROR:NO_URI");
+    return;
+  }
+
+  if (ws && ws.readyState === WebSocket.OPEN) {
+    notify("WS:ALREADY_CONNECTED");
+    return;
+  }
+
+  ws = new WebSocket(wsUri);
+  ws.binaryType = "arraybuffer";
+
+  ws.onopen = () => {
+    notify("WS:OPEN");
+  };
+
+  ws.onmessage = (event) => {
+    if (typeof event.data === "string") {
+        // If it's a protocol ping, handle it silently
+        if (handlePing(event.data)) return; 
+        
+        // Otherwise, tell App Inventor about the text
+        notify(event.data);
+    } else {
+      // 1. Get the raw bytes
+      let bytes = new Uint8Array(event.data);
+      let asciiString = "";
+
+      // 2. Build the string byte-by-byte (ASCII)
+      for (let i = 0; i < bytes.length; i++) {
+        asciiString += String.fromCharCode(bytes[i]);
+      }
+
+      // 3. Notify the translated string. 
+      notify(asciiString);
+    }
+  };
+
+  ws.onclose = () => {
+    notify("WS:CLOSED");
+  };
+
+  ws.onerror = () => {
+    notify("WS:ERROR");
+  };
+}
+
+function disconnectWS() {
+  if (ws) {
+    ws.close();
+    ws = null;
+  }
+}
+
+/* ========= Sending ========= */
+
+function sendText(msg) {
+  if (ws && ws.readyState === WebSocket.OPEN) {
+    ws.send(msg);
+  } else {
+    notify("WS:SEND_FAIL:NOT_CONNECTED");
+  }
+}
+
+function sendBinary(asciiText) {
+  if (ws && ws.readyState === WebSocket.OPEN) {
+    let bytes = new Uint8Array(asciiText.length);
+    for (let i = 0; i < asciiText.length; i++) {
+      bytes[i] = asciiText.charCodeAt(i);
+    }
+    ws.send(bytes.buffer);
+  } else {
+    notify("WS:SEND_FAIL:NOT_CONNECTED");
+  }
+}
+
+// Automatically reply to pings to keep the connection alive
+function handlePing(message) {
+    try {
+        const data = JSON.parse(message);
+        // Check if the message is a Ping array
+        if (Array.isArray(data) && data[0].Ping) {
+            const pingId = data[0].Ping.Id;
+            // Send back the required Ok response
+            ws.send(JSON.stringify([{ "Ok": { "Id": pingId } }]));
+            return true; // We handled it
+        }
+    } catch (e) {
+        return false; // Not a JSON ping
+    }
+    return false;
+}
+  
+/* ========= Startup ========= */
+
+notify("WS:HTML_READY");
+</script>
+</body>
+</html>
