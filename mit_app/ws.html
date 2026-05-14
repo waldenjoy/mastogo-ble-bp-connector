@@ -54,16 +54,19 @@ function connectWS() {
         if (handlePing(event.data)) return; 
         
         // Otherwise, tell App Inventor about the text
-        notify("TEXT:" + event.data);
+        notify(event.data);
     } else {
-      // Binary ? Base64
+      // 1. Get the raw bytes
       let bytes = new Uint8Array(event.data);
-      let binary = "";
+      let asciiString = "";
+
+      // 2. Build the string byte-by-byte (ASCII)
       for (let i = 0; i < bytes.length; i++) {
-        binary += String.fromCharCode(bytes[i]);
+        asciiString += String.fromCharCode(bytes[i]);
       }
-      let b64 = btoa(binary);
-      notify("BIN:" + b64);
+
+      // 3. Notify the translated string. 
+      notify(asciiString);
     }
   };
 
