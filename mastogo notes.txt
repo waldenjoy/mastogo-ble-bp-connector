@@ -1,13 +1,46 @@
 DEVICE --
 ff:24:03:26:04:0e  MASTOGO-040E  4.2  1  LinkedSemi Microelectronics (Xiamen) Co., Ltd                                                                  
 
---------------------
-Wierdness
 
-- in NRF the text starts with " 2b ", not " 41542b "
-ex - 2b-43-53-54-52-3a-31-2c-39-0d-0a
+---BLE to AT MODE Commands-----------------
+- AT commands are written to BLE characteristic at handle 0x0020
+BLE Write → Handle 0x0020
+Payload → ASCII AT commands
+Format → AT+COMMAND\r\n
 
-- sometimes " 3 " is used as a zero place holder or spacer 
+
+- Written in ASCII hex representation
+" AT+<CMD>[=<params>]\r\n "
+
+AT+   - Command prefix
+CMD   - Function
+=     - Optional set
+?     - Query
+\r\n  - Line termination
+
+Full command set
+
+AT+CMODE? > get mode
+AT+CMODE=0,x > set mode
+AT+CSTR=0,x > set level
+AT+QPOWS > start
+AT+QPOWP > pause
+AT+CDCLK=... > set timer
+AT+CBC? > battery/status
+
+
+Ex - AT+CSTR=0,5
+41542B 435354523D 30 2C 35 0D0A
+
+41 54 2B 43 53 54 52 3D 30 2C 35 0D 0A
+
+
+
+
+------------------------
+
+3 is leading digit of the ASCII encoding of digits:
+'0' = 0x30 '1' = 0x31 '7' = 0x37 
 
 Ex - levels 
 LVL9   - 41542b 435354523a312 c39 0d0a > c39 is 9
@@ -15,13 +48,6 @@ LVL10 - 41542b 435354523a312 c3130 0d0a > c3130 is 10
 
 Ex - time
 30:06 - 41542b 4344434c4b3d30303 3303036 0d0a
-
-
-??? for levels above 9 ????
-31-2c39 > 31-30
-
-
-
 
 Pause
 Value: 41542b 51504f5750 0d0a
@@ -31,15 +57,23 @@ Value: 41542b 51504f5753 0d0a
 
 Keep Alive -- SENT EVERY 30 sec
 Value: 41542b4342433f0d0a -- ??
+AT+CBC? = periodic status/battery query (used as heartbeat)
+
+
+
+- NRF is omitting the "AT" (4154) portion
+ex - 2b-43-53-54-52-3a-31-2c-39-0d-0a
+
 
 
 ---------------------
 LEVELS
+
+Each digit is ASCII Hex encoded 
 - 10 jumps to c3130 
 
 
 LVL1 - LVL2
--- USE Cxx FOR LEVEL SO THAT >15 (c3f) IS MAPPED
 Value: 41542b 435354523d302 c32 0d0a  --  435354523d302 c32   -- 2 is level
 
 LVL2 - LVL1
@@ -49,7 +83,7 @@ LVL2 - LVL3
 Value: 41542b 435354523d302 c33 0d0a  --  435354523d302 c33   -- 3 is level
 
 LVL10
-Value: 41542b 435354523a312 c3130 0d0a > c3130 is 10
+Value: 41542b 435354523a312 c3130 0d0a > c3130 -- 10 is level
 
 
 -----------------------
@@ -82,28 +116,38 @@ Value: 41542b 51504f5750 0d0a (pause)
 
 
 ------------------------
-TIME
-(DELETE 4344434c4b3d30303; THEN DELETE 3 IN 2,4,6 POSITION)
+TIMER REMAINING
+
+AT+CDCLK=<time_digits>  MMSS
 
 30:06
-Value: 41542b 4344434c4b3d30303 3303036 0d0a
+Value: 41542b 4344434c4b3d30303 3303036 0d0a -- 0x33 0x30 0x30 0x36
 
 30:12
-Value: 41542b 4344434c4b3d30303 3303132 0d0a
+Value: 41542b 4344434c4b3d30303 3303132 0d0a -- 0x33 0x30 0x31 0x32
 
 37:04
-Value: 41542b 4344434c4b3d30303 3373034 0d0a
+Value: 41542b 4344434c4b3d30303 3373034 0d0a -- 0x33 0x37 0x30 0x34
 
 12:13
-Value: 41542b 4344434c4b3d30303 1323133 0d0a
+Value: 41542b 4344434c4b3d30303 1323133 0d0a -- 0x31 0x32 0x31 0x33
 
-???? lengthen time
-Value: 41542b 4344434c4b3d303 13 0303030 0d0a  --  ??
-
-
+Send time value to lengthen time
+Value: 41542b 4344434c4b3d303 13 0303030 0d0a  -- 
 
 
-Value: 41542b 4 444 4c4b d003006 0d0a
+-- BATTERY ----------------------
+Battery read methods -
 
+1. Standard BLE
+0x2A19 → simple %
+
+2. AT Command (AT+CBC?)
+Rich data:
+percentage
+voltage
+charging state
+
+----------------------
 
 

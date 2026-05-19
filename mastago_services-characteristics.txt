@@ -20,4 +20,26 @@
 00002a19-0000-1000-8000-00805f9b34fb Battery
 
 
+When configuring your MIT App Inventor BluetoothLE Extension blocks, apply the discovered parameters as follows:
 
+    To Connect and Read Status:
+
+        Call BluetoothLE1.RegisterForStrings (or RegisterForBytes depending on your script preferences) using:
+
+            ServiceUUID: 0000fff0-0000-1000-8000-00805f9b34fb
+
+            CharacteristicUUID: 0000fff4-0000-1000-8000-00805f9b34fb
+
+        Note: App Inventor will automatically find the CCCD handle (0x001e) and write the 0100 bit for you when you execute this block.
+
+
+
+    To Send Commands (Like Play, Pause, Level):
+
+        Call BluetoothLE1.WriteStrings (or your updated ASCII-to-byte JavaScript array function) using:
+
+            ServiceUUID: 0000fff0-0000-1000-8000-00805f9b34fb
+
+            CharacteristicUUID: 0000fff5-0000-1000-8000-00805f9b34fb
+
+            Value: Your raw text command string, ensuring you append the trailing line breaks (\r\n / 0x0D 0x0A) expected by the onboard AT interpreter.
