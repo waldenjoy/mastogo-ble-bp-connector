@@ -1,13 +1,23 @@
-## Websocket extensions for MIT APP Inventor
+## The app was created using the [MIT App Inventor platform](https://iot.appinventor.mit.edu/), with some vibe coding here and there.
+<br>
+
+BLE extension for MIT APP Inventor \
+https://iot.appinventor.mit.edu/iot/reference/bluetoothle
+<br>
+
+<br>
+
+## The following modules _might_ work for a similar project. The HTML method was the fastest and easiest to implement.
+_Sourced from Websocket extensions for MIT APP Inventor_ \
 https://community.appinventor.mit.edu/t/all-rescued-extensions-from-inactive-communities/27169/26  
+<br>
+  
 
-
-## Andres Cotes - try 1st
+Andres Cotes - meh \
+_com.gmail.at.moicjarod.aix_ \
 https://community.appinventor.mit.edu/t/tcp-ip-extension/7142/41 \
-com.gmail.at.moicjarod.aix
+<br>
 
-
-##  Jean-Rodolphe_Letert - seems to be a TCP socket with web abilities??
-https://web.archive.org/web/20190926062820/https://community.appybuilder.com/t/websocket-client-extension/1761 \
-co.com.dendritas.WebSocketCl.aix
-
+Jean-Rodolphe_Letert - seems to be a TCP socket with web abilities?? \
+_co.com.dendritas.WebSocketCl.aix_ \
+https://web.archive.org/web/20190926062820/https://community.appybuilder.com/t/websocket-client-extension/1761
