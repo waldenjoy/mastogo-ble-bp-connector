@@ -1,4 +1,7 @@
-__The app is being created using the [MIT App Inventor platform](https://iot.appinventor.mit.edu/), with some vibe coding here and there.__
+## Andriod app built in MIT App Inventor
+<br>
+
+__Created using the [MIT App Inventor platform](https://iot.appinventor.mit.edu/), with some vibe coding here and there.__
 <br>
 
 - Searches for BLE devices and shows list
