@@ -8,11 +8,13 @@ https://iot.appinventor.mit.edu/iot/reference/bluetoothle
 
 <br>
 
-## The following modules _might_ work for a similar project. The HTML method was the fastest and easiest to implement.
+### The following modules _might_ work for a similar project.
 _Sourced from Websocket extensions for MIT APP Inventor_ \
 https://community.appinventor.mit.edu/t/all-rescued-extensions-from-inactive-communities/27169/26  
 <br>
-  
+
+<br>
+
 __Andres Cotes - meh__ \
 _com.gmail.at.moicjarod.aix_ \
 https://community.appinventor.mit.edu/t/tcp-ip-extension/7142/41 \
