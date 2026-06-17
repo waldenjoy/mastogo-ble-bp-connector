@@ -1,8 +1,4 @@
-                Connect BuzzyBody to Intiface Central /\* Reset some default browser styles \*/ \* { margin: 0; padding: 0; box-sizing: border-box; } /\* Set the background and main styling \*/ body { display: flex; justify-content: center; align-items: center; min-height: 100vh; font-family: Arial, sans-serif; color: #333; background-color: #f9f9f9; } /\* Style for the container \*/ .container { text-align: center; max-width: 600px; padding: 20px; } /\* Style for the headings \*/ h1 { font-size: 2.5rem; margin-bottom: 10px; } h2 { font-size: 1.2rem; color: #555; margin-bottom: 20px; } /\* Style for lists \*/ ol { text-align: left; margin: 20px 0; padding-left: 20px; } li { margin-bottom: 15px; line-height: 1.5; } /\* Style for images \*/ .screenshot { display: block; margin: 20px auto; max-width: 100%; height: auto; border: 1px solid #ccc; padding: 5px; background-color: #fff; } /\* Style for links \*/ .links a { text-decoration: none; color: #007bff; font-size: 1.1rem; margin: 0 10px; transition: color 0.3s ease; } /\* Hover effect for links \*/ .links a:hover { color: #0056b3; } /\* Breadcrumb container \*/ .breadcrumb { position: absolute; top: 20px; left: 20px; font-size: 0.9rem; color: #555; } /\* Breadcrumb list styling \*/ .breadcrumb ul { display: flex; list-style: none; padding: 0; margin: 0; } /\* Breadcrumb item styling \*/ .breadcrumb li { margin-right: 10px; } /\* Breadcrumb separator \*/ .breadcrumb li::after { content: ">"; margin-left: 10px; color: #aaa; } /\* Remove separator from last item \*/ .breadcrumb li:last-child::after { content: ""; margin: 0; } /\* Breadcrumb link styling \*/ .breadcrumb a { text-decoration: none; color: #007bff; transition: color 0.3s ease; } .breadcrumb a:hover { color: #0056b3; }
-
-*   [Home](/)
-*   BuzzyBody
-*   BuzzyBody 2 ButtPlug
+[Copied from the BuzzyBody Site](https://comradeoohaah.com/BuzzyBody2Intiface.php)
 
 Connect BuzzyBody to Intiface Central
 =====================================
