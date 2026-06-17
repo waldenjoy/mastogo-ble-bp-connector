@@ -1,24 +1,23 @@
 ## Notes on the Mastago BT Tens unit and ButtPlug Intiface connectivity
-  
-- Dumped bluetooth info from the MASTAGO BT unit. 
-- MIT APP Inventor modules and functioning Android app (_coming soon_). 
-- HTML Websockets code to send and receive info to the ButtPlug Intiface app. 
 <br>
 
+- Dumped bluetooth BLE info from the MASTAGO BT unit. 
+- MIT APP Inventor modules and functioning Android app (_app coming soon_). 
+- Simple Javascript WebSockets code to communicate with the ButtPlug Intiface app via the Lovense WebSocket Connector.
+<br>
 
 Most of the custom code and research was done with the assistance of AI.
 <br>
 
+<br>
+
+_The folks at ButtPlug do not support the use of estim devices with their code. Do not bother them!_
+<br>
+
 
 <br>
 
-_The folks at ButtPlug do not support the use of TENS devices with their code. Do not bother them._
-<br>
-
-
-<br>
-
-## Disclaimer: The developer is not responsible for any injuries, damages, or consequences resulting from the use or misuse of a TENS device or related software.
+## Disclaimer: The developer is not responsible for any injuries, damages, or consequences resulting from the use or misuse of any TENS device or related software.
 <br>
 
 ### ⚠️ Warning: Proper Use of TENS Devices 
