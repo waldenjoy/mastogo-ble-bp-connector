@@ -1,7 +1,7 @@
-## Notes on the Mastago BT Tens unit and ButtPlug Intiface connectivity
+## Notes on the Mastogo BT Tens unit and ButtPlug Intiface connectivity
 <br>
 
-- Dumped bluetooth BLE info from the MASTAGO BT unit. 
+- Dumped bluetooth BLE info from the MASTOGO BT unit. 
 - MIT APP Inventor modules and functioning Android app (_app coming soon_). 
 - Simple Javascript WebSockets code to communicate with the ButtPlug Intiface app via the Lovense WebSocket Connector.
 <br>
