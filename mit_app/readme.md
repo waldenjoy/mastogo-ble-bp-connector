@@ -5,7 +5,7 @@ __Created using the [MIT App Inventor platform](https://iot.appinventor.mit.edu/
 <br>
 
 - Searches for BLE devices and shows list
-- User can choose between manual Mastago controls or ButtPlug IntiFace connection.
+- User can choose between manual Mastogo controls or ButtPlug IntiFace connection.
 - App loads JS Websocket code into a WebCanvas window with the JS code, intefacing with ButtPlug Intiface.
 - ButtPlug VIBRATION levels are translated to TENS intensity level.
 - Pattern is set within app to 19
@@ -15,7 +15,7 @@ __Created using the [MIT App Inventor platform](https://iot.appinventor.mit.edu/
 <br>
 
 ___Working___
-- Mastago BT services are mapped out
+- Mastogo BT services are mapped out
 - TENS Manual controls work for Start/Stop, Pattern, Intensity
 - Data is sent between BT device and Intiface
 - VIBRATION is translated to TENS intensity level
